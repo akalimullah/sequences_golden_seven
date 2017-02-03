@@ -1,0 +1,6 @@
+<h1>HI!</h1>
+<ol>
+  <% Guess.all.each do |guess| %>
+  <li><a href="/guesses/<%=guess.id%>"><%=guess.guess_string%></a> <a href="/guesses/<%=guess.id%>/edit">EDIT</a></li>
+  <% end %>
+</ol>
